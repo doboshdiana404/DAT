@@ -1,0 +1,46 @@
+.hero-logo-img {
+  width: 106px;
+  height: 48px;
+}
+
+.hero-shoping-icon {
+  fill: #8c3213;
+}
+
+.hero-price {
+  font-weight: 700;
+  font-size: 12px;
+  font-variant: all-small-caps;
+  color: #000;
+}
+
+.hero-shoping-btn {
+  background-color: transparent;
+  width: 41px;
+  height: 41px;
+  border: 1px solid #8c3213;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero {
+  padding-top: 19px;
+}
+
+.hero-container {
+  display: flex;
+}
+
+.hero-shoping-list {
+  display: flex;
+  gap: 11px;
+}
+
+.hero-shop-wrap{
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}

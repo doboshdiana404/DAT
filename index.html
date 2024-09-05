@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DAT</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/hero.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header-container">
+        <nav class="header-navigation">
+            <ul class="header-navigation-list">
+                <li class="header-navigation-item"><a class="header-navigation-link" href="">Про нас</a></li>
+                <li class="header-navigation-item"><a class="header-navigation-link" href="">Каталог продукції</a></li>
+                <li class="header-navigation-item"><a class="header-navigation-link" href="">Оплата і доставка</a></li>
+                <li class="header-navigation-item"><a class="header-navigation-link" href="">Партнери</a></li>
+                <li class="header-navigation-item"><a class="header-navigation-link" href="">Новини</a></li>
+                <li class="header-navigation-item"><a class="header-navigation-link" href="">Контакти</a></li>
+            </ul>
+        </nav>
+       <div class="header-logout-wrap">
+            <svg class="header-logout-icon" width="20" height="20">
+              <use href="./img/sprite.svg#icon-logout"></use>
+            </svg>
+            <ul class="header-logout-list">
+              <li class="header-logout-item">
+                <a class="header-logout-link" href="">Вхід</a>
+              </li>
+              <li class="header-logout-item">
+                <a class="header-logout-link" href="">Реестрація</a>
+              </li>
+            </ul>
+            <button class="header-mob-menu" type="button">
+              <svg class="header-menu-icon" width="28" height="28">
+                <use href="./img/sprite.svg#icon-menu"></use>
+              </svg>
+            </button>
+       </div>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="container hero-container">
+          <a class="hero-logo-link" href=""
+            ><img
+              class="hero-logo-img"
+              src="./img/Logo.png"
+              alt="LOGOTYPE"
+              width="158"
+              height="71"
+          /></a>
+
+        <div class="hero-shop-wrap">
+              <ul class="hero-shoping-list">
+                <li class="hero-shoping-item">
+                  <button class="hero-shoping-btn" type="button">
+                    <svg class="hero-shoping-icon" width="16" height="16">
+                      <use href="./img/sprite.svg#icon-comparison"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li class="hero-shoping-item">
+                  <button class="hero-shoping-btn" type="button">
+                    <svg class="hero-shoping-icon" width="16" height="16">
+                      <use href="./img/sprite.svg#icon-shopping"></use>
+                    </svg>
+                  </button>
+                </li>
+              </ul>
+              <p class="hero-price">0,0 грн</p>
+        </div>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>
