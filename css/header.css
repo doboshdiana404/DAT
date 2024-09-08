@@ -24,28 +24,43 @@
 
 .header-logout-list {
   display: flex;
-  gap: 16px;
-  padding-bottom: 11px;
-  padding-top: 11px;
+  gap: 14px;
+  /* padding-bottom: 11px;
+  padding-top: 11px; */
+}
+
+.header-logout-item {
+  position: relative;
+}
+
+.header-logout-item:not(:last-child):after {
+  content: '';
+  width: 1px;
+  height: 16px;
+  background-color: #fff;
+  position: absolute;
+  right: -7px;
+  top: 1px;
+  top: 3px;
 }
 
 .header-mob-menu {
   background-color: transparent;
   border: none;
   margin-left: auto;
-  padding-bottom: 11px;
-  padding-top: 11px;
 }
 .header-logout-wrap {
   display: flex;
   align-items: center;
+  padding-bottom: 11px;
+  padding-top: 11px;
 }
 
 .header-navigation {
   display: none;
 }
 
-.header-navigation-list{
+.header-navigation-list {
   display: flex;
   gap: 45px;
 }
@@ -56,23 +71,197 @@
   color: #fff;
 }
 
+.header-menu-modal {
+  background-color: #1e6140;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  min-width: 320px;
+  max-width: 600px;
+  height: 728px;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.header-modal-top {
+  display: flex;
+  align-items: center;
+}
+
+.header-logout-tablet {
+  display: flex;
+  align-items: center;
+}
+
+.header-modal-top-bg {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding-top: 13px;
+  padding-bottom: 13px;
+}
+
+.modal-shoping-icon {
+  fill: #fff;
+}
+
+.modal-shoping-btn {
+  background-color: transparent;
+  width: 41px;
+  height: 41px;
+  border: 1px solid #fff;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-bottom-shop {
+  display: flex;
+}
+
+.header-modal-bottom {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.modal-price {
+  font-weight: 700;
+  font-size: 12px;
+  font-variant: all-small-caps;
+  color: #fff;
+}
+
+.header-modal-heart-btn {
+  background-color: transparent;
+  border-radius: 100%;
+  border: 1px solid #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+}
+
+.header-modal-heart-icon {
+  stroke: #fff;
+  fill: transparent;
+}
+
+.header-modal-search-input {
+  width: 230px;
+  height: 40px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 90px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 19px;
+  padding-right: 49px;
+}
+
+.header-input-wrap {
+  position: relative;
+  margin-left: auto;
+}
+
+.header-modal-loupe-icon {
+  stroke: #84be51;
+  fill: transparent;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.header-modal-search-input::placeholder {
+  color: #484848;
+}
+
+.header-modal-search {
+  display: flex;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.header-modal-contact {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.header-modal-number-text {
+  color: #fff;
+}
+
+.header-modal-icon-down {
+  fill: #84be51;
+}
+
+.header-modal-contact-link {
+  font-weight: 700;
+  font-size: 14px;
+  text-decoration: underline;
+  color: #84be51;
+}
+
+.header-modal-contact-number {
+  margin-left: 6px;
+}
+
+.header-modal-contact::after {
+  content: '';
+  width: 289px;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.1);
+  position: absolute;
+  top: 63px;
+}
+
+.header-modal-item-link {
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 2.88;
+  color: #fff;
+}
+
+.header-modal-navigation {
+  padding-top: 64px;
+}
+
+.header-modal-item {
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .header-logout-tablet {
+    display: none;
+  }
+}
+
 @media screen and (min-width: 1140px) {
   .header-mob-menu {
     display: none;
   }
 
   .header-logout-wrap {
-
+    padding-left: 54px;
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
   }
 
   .header-navigation {
     display: block;
-    margin-right: 115px;
+    margin-right: 62px;
   }
 
-.header-container{
-  display: flex;
-  align-items: center;
-}
+  .header-container {
+    display: flex;
+    align-items: center;
+  }
 
+  .header-logout-list {
+    padding-bottom: 11px;
+    padding-top: 11px;
+  }
 }

@@ -20,72 +20,240 @@
     />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/header.css" />
-    <link rel="stylesheet" href="./css/hero.css">
+    <link rel="stylesheet" href="./css/hero.css" />
   </head>
   <body>
     <header class="header">
       <div class="container header-container">
         <nav class="header-navigation">
-            <ul class="header-navigation-list">
-                <li class="header-navigation-item"><a class="header-navigation-link" href="">Про нас</a></li>
-                <li class="header-navigation-item"><a class="header-navigation-link" href="">Каталог продукції</a></li>
-                <li class="header-navigation-item"><a class="header-navigation-link" href="">Оплата і доставка</a></li>
-                <li class="header-navigation-item"><a class="header-navigation-link" href="">Партнери</a></li>
-                <li class="header-navigation-item"><a class="header-navigation-link" href="">Новини</a></li>
-                <li class="header-navigation-item"><a class="header-navigation-link" href="">Контакти</a></li>
-            </ul>
+          <ul class="header-navigation-list">
+            <li class="header-navigation-item">
+              <a class="header-navigation-link" href="">Про нас</a>
+            </li>
+            <li class="header-navigation-item">
+              <a class="header-navigation-link" href="">Каталог продукції</a>
+            </li>
+            <li class="header-navigation-item">
+              <a class="header-navigation-link" href="">Оплата і доставка</a>
+            </li>
+            <li class="header-navigation-item">
+              <a class="header-navigation-link" href="">Партнери</a>
+            </li>
+            <li class="header-navigation-item">
+              <a class="header-navigation-link" href="">Новини</a>
+            </li>
+            <li class="header-navigation-item">
+              <a class="header-navigation-link" href="">Контакти</a>
+            </li>
+          </ul>
         </nav>
-       <div class="header-logout-wrap">
-            <svg class="header-logout-icon" width="20" height="20">
-              <use href="./img/sprite.svg#icon-logout"></use>
+        <div class="header-logout-wrap">
+          <svg class="header-logout-icon" width="20" height="20">
+            <use href="./img/sprite.svg#icon-logout"></use>
+          </svg>
+          <ul class="header-logout-list">
+            <li class="header-logout-item">
+              <a class="header-logout-link" href="">Вхід</a>
+            </li>
+            <li class="header-logout-item">
+              <a class="header-logout-link" href="">Реестрація</a>
+            </li>
+          </ul>
+          <button class="header-mob-menu" type="button">
+            <svg class="header-menu-icon" width="28" height="28">
+              <use href="./img/sprite.svg#icon-menu"></use>
             </svg>
-            <ul class="header-logout-list">
-              <li class="header-logout-item">
-                <a class="header-logout-link" href="">Вхід</a>
-              </li>
-              <li class="header-logout-item">
-                <a class="header-logout-link" href="">Реестрація</a>
-              </li>
-            </ul>
+          </button>
+        </div>
+      </div>
+      <div class="header-menu-modal">
+        <div class="header-modal-top-bg">
+          <div class="header-modal-top container">
+            <div class="header-logout-tablet">
+              <svg class="header-logout-icon" width="20" height="20">
+                <use href="./img/sprite.svg#icon-logout"></use>
+              </svg>
+              <ul class="header-logout-list">
+                <li class="header-logout-item">
+                  <a class="header-logout-link" href="">Вхід</a>
+                </li>
+                <li class="header-logout-item">
+                  <a class="header-logout-link" href="">Реестрація</a>
+                </li>
+              </ul>
+            </div>
             <button class="header-mob-menu" type="button">
-              <svg class="header-menu-icon" width="28" height="28">
-                <use href="./img/sprite.svg#icon-menu"></use>
+              <svg class="header-menu-icon" width="25" height="23">
+                <use href="./img/sprite.svg#icon-cancel"></use>
               </svg>
             </button>
-       </div>
+          </div>
+        </div>
+        <div class="header-modal-bottom">
+          <div class="container">
+            <div class="modal-bottom-shop">
+              <a class="logo-link" href=""
+                ><img
+                  class="logo-img"
+                  src="./img/Logomodal.png"
+                  alt="LOGOTYPE"
+                  width="158"
+                  height="71"
+              /></a>
+
+              <div class="hero-shop-wrap">
+                <ul class="hero-shoping-list">
+                  <li class="modal-shoping-item">
+                    <button class="modal-shoping-btn" type="button">
+                      <svg class="modal-shoping-icon" width="16" height="16">
+                        <use href="./img/sprite.svg#icon-comparison"></use>
+                      </svg>
+                    </button>
+                  </li>
+                  <li class="modal-shoping-item">
+                    <button class="modal-shoping-btn" type="button">
+                      <svg class="modal-shoping-icon" width="16" height="16">
+                        <use href="./img/sprite.svg#icon-shopping"></use>
+                      </svg>
+                    </button>
+                  </li>
+                </ul>
+                <p class="modal-price">0,0 грн</p>
+              </div>
+            </div>
+            <div class="header-modal-search">
+              <button class="header-modal-heart-btn" type="button">
+                <svg width="19" height="16" class="header-modal-heart-icon">
+                  <use href="./img/sprite.svg#icon-heart"></use>
+                </svg>
+              </button>
+              <div class="header-input-wrap">
+                <input
+                  class="header-modal-search-input"
+                  type="text"
+                  placeholder="Пошук"
+                  id="searchInput"
+                />
+                <svg width="15" height="15" class="header-modal-loupe-icon">
+                  <use href="./img/sprite.svg#icon-loupe"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="header-modal-contact">
+              <button class="header-modal-heart-btn" type="button">
+                <svg width="16" height="16" class="header-modal-heart-icon">
+                  <use href="./img/sprite.svg#icon-call"></use>
+                </svg>
+              </button>
+              <div class="header-modal-contact-number">
+                <p class="header-modal-number-text">
+                  +38 (067) 115 00 58
+                  <svg width="10" height="10" class="header-modal-icon-down">
+                    <use href="./img/sprite.svg#icon-down"></use>
+                  </svg>
+                </p>
+                <a class="header-modal-contact-link" href="tel:+380671150058"
+                  >Замовити зворотній зв’язок</a
+                >
+              </div>
+            </div>
+            <nav class="header-modal-navigation">
+              <ul class="header-modal-list">
+                <li class="header-modal-item">
+                  <a class="header-modal-item-link" href="">Про компанію</a>
+                </li>
+                <li class="header-modal-item">
+                  <a class="header-modal-item-link" href=""
+                    >Каталог продукції</a
+                  >
+                </li>
+                <li class="header-modal-item">
+                  <a class="header-modal-item-link" href=""
+                    >Оплата і доставка</a
+                  >
+                </li>
+                <li class="header-modal-item">
+                  <a class="header-modal-item-link" href="">Партнери</a>
+                </li>
+                <li class="header-modal-item">
+                  <a class="header-modal-item-link" href="">Контакти</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
       </div>
     </header>
     <main>
       <section class="hero">
         <div class="container hero-container">
-          <a class="hero-logo-link" href=""
+          <a class="logo-link" href=""
             ><img
-              class="hero-logo-img"
+              class="logo-img"
               src="./img/Logo.png"
               alt="LOGOTYPE"
               width="158"
               height="71"
           /></a>
-
-        <div class="hero-shop-wrap">
-              <ul class="hero-shoping-list">
-                <li class="hero-shoping-item">
-                  <button class="hero-shoping-btn" type="button">
-                    <svg class="hero-shoping-icon" width="16" height="16">
-                      <use href="./img/sprite.svg#icon-comparison"></use>
+          <div class="hero-shop-desktop">
+           
+                <div class="header-input-wrap">
+                  <input
+                    class="header-modal-search-input"
+                    type="text"
+                    placeholder="Пошук"
+                    id="searchInput"
+                  />
+                  <svg width="15" height="15" class="header-modal-loupe-icon">
+                    <use href="./img/sprite.svg#icon-loupe"></use>
+                  </svg>
+                </div>
+                <div class="header-modal-contact">
+                  <button class="header-modal-heart-btn hero-desk-call-btn" type="button">
+                    <svg width="16" height="16" class="header-modal-heart-icon hero-desk-call-icon">
+                      <use href="./img/sprite.svg#icon-call"></use>
                     </svg>
                   </button>
-                </li>
+                  <div class="header-modal-contact-number">
+                    <p class="header-modal-number-text hero-number-desk">
+                      +38 (067) 115 00 58
+                      <svg width="10" height="10" class="header-modal-icon-down">
+                        <use href="./img/sprite.svg#icon-down"></use>
+                      </svg>
+                    </p>
+                    <a class="header-modal-contact-link" href="tel:+380671150058"
+                      >Замовити зворотній зв’язок</a
+                    >
+                  </div>
+                </div>
+           
+          </div>
+          <div class="hero-shop-wrap">
+            <ul class="hero-shoping-list">
                 <li class="hero-shoping-item">
-                  <button class="hero-shoping-btn" type="button">
-                    <svg class="hero-shoping-icon" width="16" height="16">
-                      <use href="./img/sprite.svg#icon-shopping"></use>
-                    </svg>
-                  </button>
-                </li>
-              </ul>
-              <p class="hero-price">0,0 грн</p>
-        </div>
+                    <button class="hero-shoping-btn" type="button">
+                      <svg class="hero-shoping-icon" width="16" height="16">
+                        <use href="./img/sprite.svg#icon-heart"></use>
+                      </svg>
+                    </button>
+                  </li>
+              <li class="hero-shoping-item">
+                <button class="hero-shoping-btn" type="button">
+                  <svg class="hero-shoping-icon" width="16" height="16">
+                    <use href="./img/sprite.svg#icon-comparison"></use>
+                  </svg>
+                </button>
+              </li>
+              <li class="hero-shoping-item">
+                <button class="hero-shoping-btn" type="button">
+                  <svg class="hero-shoping-icon" width="16" height="16">
+                    <use href="./img/sprite.svg#icon-shopping"></use>
+                  </svg>
+                </button>
+              </li>
+            </ul>
+            <p class="hero-price">0,0 грн</p>
+          </div>
         </div>
       </section>
     </main>

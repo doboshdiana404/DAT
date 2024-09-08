@@ -1,10 +1,23 @@
-.hero-logo-img {
+.hero{
+  background-image: url(../img/hero_mob.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 340px;
+  height: 757px;
+}
+
+.logo-img {
   width: 106px;
   height: 48px;
 }
 
 .hero-shoping-icon {
-  fill: #8c3213;
+  stroke: #8c3213;
+  fill: transparent;
+}
+
+.hero-shoping-item:first-child{
+  display: none;
 }
 
 .hero-price {
@@ -43,4 +56,37 @@
     display: flex;
     align-items: center;
     gap: 7px;
+}
+
+.hero-shop-desktop{
+  display: none;
+}
+
+@media screen and (min-width: 1140px) {
+  .hero-shop-desktop{
+    display: flex;
+  }
+
+  .header-modal-search-input{
+    width: 342px;
+    margin-left: 30px;
+  }
+
+  .hero-number-desk{
+    color: #000;
+  }
+
+  .hero-desk-call-icon{
+    stroke: #8c3213;
+  }
+  .hero-desk-call-btn{
+    border-color: #8c3213;
+    margin-left: 57px;
+  }
+  .hero-heart{
+    border-color: #8c3213;
+  }
+  .hero-shoping-item:first-child{
+    display: block;
+  }
 }
