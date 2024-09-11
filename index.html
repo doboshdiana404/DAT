@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/header.css" />
     <link rel="stylesheet" href="./css/hero.css" />
+    <script src="./js/main.js"></script>
   </head>
   <body>
     <header class="header">
@@ -187,73 +188,111 @@
     <main>
       <section class="hero">
         <div class="container hero-container">
-          <a class="logo-link" href=""
-            ><img
-              class="logo-img"
-              src="./img/Logo.png"
-              alt="LOGOTYPE"
-              width="158"
-              height="71"
-          /></a>
-          <div class="hero-shop-desktop">
-           
-                <div class="header-input-wrap">
-                  <input
-                    class="header-modal-search-input"
-                    type="text"
-                    placeholder="Пошук"
-                    id="searchInput"
-                  />
-                  <svg width="15" height="15" class="header-modal-loupe-icon">
-                    <use href="./img/sprite.svg#icon-loupe"></use>
-                  </svg>
-                </div>
-                <div class="header-modal-contact">
-                  <button class="header-modal-heart-btn hero-desk-call-btn" type="button">
-                    <svg width="16" height="16" class="header-modal-heart-icon hero-desk-call-icon">
-                      <use href="./img/sprite.svg#icon-call"></use>
+         <div class="hero-top">
+            <a class="logo-link" href=""
+              ><img
+                class="logo-img"
+                src="./img/Logo.png"
+                alt="LOGOTYPE"
+                width="158"
+                height="71"
+            /></a>
+            <div class="hero-shop-desktop">
+             
+                  <div class="header-input-wrap">
+                    <input
+                      class="header-modal-search-input"
+                      type="text"
+                      placeholder="Пошук"
+                      id="searchInput"
+                    />
+                    <svg width="15" height="15" class="header-modal-loupe-icon">
+                      <use href="./img/sprite.svg#icon-loupe"></use>
                     </svg>
-                  </button>
-                  <div class="header-modal-contact-number">
-                    <p class="header-modal-number-text hero-number-desk">
-                      +38 (067) 115 00 58
-                      <svg width="10" height="10" class="header-modal-icon-down">
-                        <use href="./img/sprite.svg#icon-down"></use>
-                      </svg>
-                    </p>
-                    <a class="header-modal-contact-link" href="tel:+380671150058"
-                      >Замовити зворотній зв’язок</a
-                    >
                   </div>
-                </div>
-           
-          </div>
-          <div class="hero-shop-wrap">
-            <ul class="hero-shoping-list">
-                <li class="hero-shoping-item">
-                    <button class="hero-shoping-btn" type="button">
-                      <svg class="hero-shoping-icon" width="16" height="16">
-                        <use href="./img/sprite.svg#icon-heart"></use>
+                  <div class="header-modal-contact">
+                    <button class="header-modal-heart-btn hero-desk-call-btn" type="button">
+                      <svg width="16" height="16" class="header-modal-heart-icon hero-desk-call-icon">
+                        <use href="./img/sprite.svg#icon-call"></use>
                       </svg>
                     </button>
-                  </li>
-              <li class="hero-shoping-item">
-                <button class="hero-shoping-btn" type="button">
-                  <svg class="hero-shoping-icon" width="16" height="16">
-                    <use href="./img/sprite.svg#icon-comparison"></use>
-                  </svg>
-                </button>
-              </li>
-              <li class="hero-shoping-item">
-                <button class="hero-shoping-btn" type="button">
-                  <svg class="hero-shoping-icon" width="16" height="16">
-                    <use href="./img/sprite.svg#icon-shopping"></use>
-                  </svg>
-                </button>
-              </li>
-            </ul>
-            <p class="hero-price">0,0 грн</p>
-          </div>
+                    <div class="header-modal-contact-number">
+                      <p class="header-modal-number-text hero-number-desk">
+                        +38 (067) 115 00 58
+                        <svg width="10" height="10" class="header-modal-icon-down">
+                          <use href="./img/sprite.svg#icon-down"></use>
+                        </svg>
+                      </p>
+                      <a class="header-modal-contact-link" href="tel:+380671150058"
+                        >Замовити зворотній зв’язок</a
+                      >
+                    </div>
+                  </div>
+             
+            </div>
+            <div class="hero-shop-wrap">
+              <ul class="hero-shoping-list">
+                  <li class="hero-shoping-item">
+                      <button class="hero-shoping-btn" type="button">
+                        <svg class="hero-shoping-icon" width="16" height="16">
+                          <use href="./img/sprite.svg#icon-heart"></use>
+                        </svg>
+                      </button>
+                    </li>
+                <li class="hero-shoping-item">
+                  <button class="hero-shoping-btn" type="button">
+                    <svg class="hero-shoping-icon" width="16" height="16">
+                      <use href="./img/sprite.svg#icon-comparison"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li class="hero-shoping-item">
+                  <button class="hero-shoping-btn" type="button">
+                    <svg class="hero-shoping-icon" width="16" height="16">
+                      <use href="./img/sprite.svg#icon-shopping"></use>
+                    </svg>
+                  </button>
+                </li>
+              </ul>
+              <p class="hero-price">0,0 грн</p>
+            </div>
+         </div>
+         <div class="category-container">
+          <select id="categorySelect" class="mobile-only" onchange="handleCategoryChange()">
+            <option class="hero-category-link" value="category1"><svg class="category-icon" width="24" height="24">
+              <use href="./img/sprite.svg#icon-seeds"></use>
+            </svg> Насіння</option>
+            <option class="hero-category-link" value="category2"><svg class="category-icon" width="24" height="24"></svg>
+              <use href="./img/sprite.svg#icon-sapling"></use>
+            </svg>Засоби захисту рослин</option>
+            <option class="hero-category-link" value="category3"><svg class="category-icon" width="24" height="24">
+              <use href="./img/sprite.svg#icon-fertilizer"></use>
+            </svg>Добрива</option>
+            <option class="hero-category-link" value="category4"><svg class="category-icon" width="24" height="24">
+              <use href="./img/sprite.svg#icon-trees"></use>
+            </svg>кормова група</option>
+            <option class="hero-category-link" value="category5"><svg class="category-icon" width="24" height="24">
+              <use href="./img/sprite.svg#icon-farmer"></use>
+            </svg>Агроному в поміч</option>
+          </select>
+        </div>
+       <ul class="hero-category-list desktop-only">
+        <li class="hero-category-item"><a class="hero-category-link" href="#"><svg class="category-icon" width="24" height="24">
+              <use href="./img/sprite.svg#icon-seeds"></use>
+            </svg>Насіння</a></li>
+        <li class="hero-category-item"><a class="hero-category-link" href="#"><svg class="category-icon" width="24" height="24">
+              <use href="./img/sprite.svg#icon-sapling"></use>
+            </svg>Засоби захисту рослин</a></li>
+        <li class="hero-category-item"><a class="hero-category-link" href="#"><svg class="category-icon" width="24" height="24">
+              <use href="./img/sprite.svg#icon-fertilizer"></use>
+            </svg>Добрива</a></li>
+        <li class="hero-category-item"><a class="hero-category-link" href="#"><svg class="category-icon" width="24" height="24">
+              <use href="./img/sprite.svg#icon-trees"></use>
+            </svg>кормова група</a></li>
+        <li class="hero-category-item"><a class="hero-category-link" href="#"><svg class="category-icon" width="24" height="24">
+              <use href="./img/sprite.svg#icon-farmer"></use>
+            </svg>Агроному в поміч</a></li>
+       </ul>
         </div>
       </section>
     </main>

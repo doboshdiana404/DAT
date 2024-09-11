@@ -1,9 +1,11 @@
-.hero{
+.hero {
   background-image: url(../img/hero_mob.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  max-width: 340px;
+  width: 100%;
   height: 757px;
+  padding-top: 19px;
+  margin: 0 auto;
 }
 
 .logo-img {
@@ -16,7 +18,7 @@
   fill: transparent;
 }
 
-.hero-shoping-item:first-child{
+.hero-shoping-item:first-child {
   display: none;
 }
 
@@ -38,12 +40,12 @@
   justify-content: center;
 }
 
-.hero {
-  padding-top: 19px;
+.hero-top {
+  display: flex;
 }
 
 .hero-container {
-  display: flex;
+  /* display: flex; */
 }
 
 .hero-shoping-list {
@@ -51,42 +53,81 @@
   gap: 11px;
 }
 
-.hero-shop-wrap{
-    margin-left: auto;
-    display: flex;
-    align-items: center;
-    gap: 7px;
+.hero-shop-wrap {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 7px;
 }
 
-.hero-shop-desktop{
+.hero-shop-desktop {
   display: none;
 }
 
+.mobile-only {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.desktop-only {
+  display: none;
+}
+
+.hero-category-link {
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+
+}
+
+.category-icon{
+  fill: #84be51;
+}
+
 @media screen and (min-width: 1140px) {
-  .hero-shop-desktop{
+  .hero-shop-desktop {
     display: flex;
   }
 
-  .header-modal-search-input{
+  .header-modal-search-input {
     width: 342px;
     margin-left: 30px;
   }
 
-  .hero-number-desk{
+  .hero-number-desk {
     color: #000;
   }
 
-  .hero-desk-call-icon{
+  .hero-desk-call-icon {
     stroke: #8c3213;
   }
-  .hero-desk-call-btn{
+  .hero-desk-call-btn {
     border-color: #8c3213;
     margin-left: 57px;
   }
-  .hero-heart{
+  .hero-heart {
     border-color: #8c3213;
   }
-  .hero-shoping-item:first-child{
+  .hero-shoping-item:first-child {
+    display: block;
+  }
+
+  .hero {
+    background-image: url(../img/hero_desk.jpg);
+    height: 935px;
+  }
+
+  /* За замовчуванням приховуємо select */
+  .mobile-only {
+    display: none;
+  }
+
+  /* За замовчуванням показуємо список для десктопів */
+  .desktop-only {
     display: block;
   }
 }
